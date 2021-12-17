@@ -27,7 +27,7 @@ public class Main {
         driver.findElement(By.cssSelector("#txtPassword")).sendKeys("admin123");
         driver.findElement(By.cssSelector("#btnLogin")).click();
         driver.findElement(By.cssSelector("#menu_admin_viewAdminModule > b")).click();
-//        driver.findElement(By.cssSelector("#menu_admin_viewJob"));
+//      /  driver.findElement(By.cssSelector("#menu_admin_viewJob"));
 
 
         Actions act = new Actions(driver);
