@@ -1,4 +1,4 @@
-package resourses;
+package apitest;
 
 import io.cucumber.java.bs.A;
 import io.cucumber.java.en.Given;
