@@ -12,7 +12,7 @@ import java.io.File;
 
 public class MyStepdefs {
 
-    private static final String FILES = "src/test/resources/files/";
+    private static final String FILES = "src/test/java/resources/files/";
     private static final apitest.DropboxApp APP = new apitest.DropboxApp();
     private static HttpResponse<JsonNode> lastRequest;
 
@@ -65,4 +65,7 @@ public class MyStepdefs {
                 APP.getLastResponse(new File(FILES + name).getAbsolutePath()).isSuccess());
     }
 
+    @Given("I have a file {string}")
+    public void iHaveAFile(String arg0) {
+    }
 }

@@ -12,7 +12,7 @@ import java.util.Map;
 public  class DropboxApp {
     private final String oauth_key = "voZPgFB6EoMAAAAAAAAAAc5YHGDR9DpYLEYQrY6VPFGLjLBj4MHATY4oJDIr7kaF";
 
-    private Map<String, HttpResponse<JsonNode>> lastResponses = new HashMap<>();
+    private final Map<String, HttpResponse<JsonNode>> lastResponses = new HashMap<>();
 
     public HttpResponse<JsonNode> uploadFile(File file) {
         return lastResponses.put(file.getAbsolutePath(), Unirest.post("https://content.dropboxapi.com/2/files/upload")
